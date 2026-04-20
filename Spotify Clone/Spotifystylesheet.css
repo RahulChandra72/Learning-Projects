@@ -1,0 +1,416 @@
+*{
+    font-family: 'montserrat',sans-serif;
+    color: white;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.main{
+ display: flex;
+ height: 90vh;
+ background-color: black;
+}
+
+
+/* ------------- sidebar area start from here ------------ */
+.sidebar{
+    width: 20%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.navs{
+    padding: 1rem 1rem;
+    margin: 1.5vh 0.5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #121212;
+    border-radius: 1rem;
+    gap: 0.7rem;
+}
+
+.navs-options{
+   display: flex;
+   line-height: 30px;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navs-options> *{
+    column-gap: 2vh;
+    text-decoration: none ;
+}
+
+.navs-options:nth-child(2)>*{
+    opacity: 0.5;
+}
+
+.navs-options:nth-child(2)>*:hover{
+    opacity: 1;
+}
+
+.navs-options>a{
+    color: white;
+}
+
+.navs-options>i{
+    font-size: 1.35rem;
+}
+
+
+/* ------------------ sidebar your Library part start from here --------------- */
+.library{
+    height: 100%;
+    padding: 1rem 1rem;
+    margin: 1.5vh 0.5vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    border-radius: 1rem;
+    gap: 4vh;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.lib-opt{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lib-opt>img{
+    height: 1.24rem;
+    width: 1.24rem;
+}
+
+.lib-opt> *{
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.lib-opt>*:hover{
+    opacity: 1;
+}
+
+.lib-icons{
+    gap: 1rem;
+    display: flex;
+    font-size: 1rem;
+}
+
+/* -----------------library boxes start from here -------------------- */
+.lib-boxes{
+    display: grid;
+    row-gap: 3vh;
+    line-height: 5vh;
+}
+
+.box{
+    background-color: #232323;
+    border-radius: 0.6rem;
+    padding: 1rem 1rem;
+}
+
+.box-p1{
+    font-weight: bold;
+}
+
+.box-p2{
+    font-size: 0.9rem;
+}
+
+.badgebtn{
+    padding: 0 0.8rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    background-color: white;
+    color: black;
+    border: none;
+}
+/*-----------------------------------side bar section css end here --------------------------------*/
+
+
+
+/* ---------- main content area start from here ------------ */
+.main-content{
+    border-radius: 1em;
+    /* background-image: linear-gradient(#232323, #121212  ); */
+    background-color: #121212;
+    border-radius: 1rem;
+    width: 80%;
+    flex: 1;
+    overflow: auto;
+    
+}
+
+/* ---------------------------navbar top or sticky top  content area start here --------------------------------------*/
+
+.navbartop{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    padding: 1.8vh 1vw;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbartop:hover{
+    background-color: #131312;
+}
+
+.forwar-backward-icons{
+    display: flex;
+    gap: 1vw;
+}
+
+.forwar-backward-icons>img{
+    padding: 0.2rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+.navbadges{
+    display: flex;
+    gap: 0.3vw;
+}
+
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+/* ---------------------------navbartop or sticky top  content area end here --------------------------------------*/
+
+
+
+/*--------------------------cards sections start from here-------------------------------*/
+.cards{
+    width: 100%;
+    padding: 2vh 2vw 0 2vw;
+    /* background-image: linear-gradient(#232323  ); */
+    border-radius: 1rem;
+    margin: 0 0 2vh 0;
+    
+}
+
+.cards h3{
+    font-weight: bold;
+    font-size: 1.6rem     ;
+}
+
+.card-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+.singlecard:hover{
+    background-color: #23232380;
+}
+
+.singlecard{
+    width: 16%;
+    color: white;
+    background-color: #121212;
+    border-radius: 1rem;
+    padding:  0.8rem 0.8rem 0 0.8rem ;
+    /* line-height: 1.5rem; */
+}
+
+.card-image{
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1vh;
+}
+
+.card-info{
+    margin-top: 1vh;
+    color: rgba(255, 255, 255, 0.467);
+}
+
+
+
+.footer{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 100%;
+    border-top:2px solid white ;
+} 
+
+
+
+
+/*--------------------------cards sections start from here-------------------------------*/
+
+
+
+/*------------------------------------------ main content section end here ---------------------------------------------*/
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12.5vh;
+    display: flex;
+}
+
+
+
+
+
+
+
+.music-info{
+    height: 100%;
+    width: 25%;
+    padding: 0 0 0 1.2vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.music-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.7rem;
+    gap: 0;
+    line-height: 0.2;
+    margin: 0 1.2vw 0 0;
+}
+
+.music-name> *{
+    opacity: 0.9;
+}
+
+.music-name h6{
+    font-size: 0.9rem;
+}
+
+.music-info i{
+    opacity: 0.7;
+}
+
+.music-info i:hover{
+    opacity: 1;
+}
+
+.music-info img{
+    width: 16%;
+    border-radius: 0.3rem;
+    margin: 0 1vw 0 0;
+    left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.player-parts{
+    height: 100%;
+    width: 50%;
+    padding: 1vh 1vw;
+    
+}
+
+.play-pause-part{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.duration-part{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.play-pause-part>img{
+    background-color: black;
+    height: 38%;
+    width: 1vw;
+}
+
+#playorpause{
+    height:2.5rem ;
+    width: 2.5rem;
+}
+
+.progressbar{
+        appearance: none;
+        width: 70%;
+        height: 2px;
+        border-radius: 1rem;
+        background-color: grey;
+        cursor: pointer;
+}
+
+
+.duration-part>p{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.music-controler{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+
+.music-controler>input{
+    height: 5px;
+    appearance: none;
+    border-radius: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.music-controler>*{
+    opacity: 0.8;
+}
+
+.music-controler>*:hover{
+    opacity: 1;
+}
